@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#00225B">
+
+    <meta name="description" content="GM Face | GM1LP - Бизнес, технологии, компании, люди." />
+    <meta name="keywords" content="" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="GM Face | GM1LP - Бизнес, технологии, компании, люди." />
+    <meta property="og:url" content="https://gmface.ru" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:title" content="Добро пожаловать в сообщество профессионалов" /><!-- 30 symbols -->
+    <meta property="og:description" content="GM Face | GM1LP - Бизнес, технологии, компании, люди." /><!-- 120 symbols -->
+    <meta property="og:image" content="https://gmface.ru/images/screen.png" />
+    <meta property="og:image:width" content="968" />
+    <meta property="og:image:height" content="504" />
+
+    <title>GM Face | GM1LP - Бизнес, технологии, компании, люди.</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" >
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+</head>
+<body>
+<section class="gm-section-1">
+    <div class="container">
+        <div class="gm-head">
+            <img src="/images/gm-head-icon.png" class="gm-head-icon" alt="">
+            <div class="gm-head-line"></div>
+            <button onclick="glob.ta('auth')" class="btn btn-gm">
+					<span class="btn-gm-text">
+						Войти в GM
+					</span>
+            </button>
+            <div id="auth" class="gm-auth d-none">
+                <div class="modal-header">
+                    <h5 class="modal-title">Войти в GM</h5>
+                    <button onclick="glob.ta('auth')" type="button" class="close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Выполните вход для доступа <br>ко всей системе сайтов GM</p>
+                    <div class="input-group">
+                        <input type="text" placeholder="Адрес эл. почты или телефон">
+                    </div>
+                    <div class="input-group">
+                        <input type="password" style="padding-right: 120px" placeholder="Пароль">
+                        <div class="input-group-append">
+                            <button type="button">Показать</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <button type="button" class="btn btn-secondary">Войти</button>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#">Забыли пароль?</a>
+                        </div>
+                    </div>
+                    <div class="gm-auth-social-line"></div>
+                    <div class="gm-auth-socials">
+                        <a class="auth-social" href="#"><img src="/images/socials/fb.png" alt=""></a>
+                        <a class="auth-social" href="#"><img src="/images/socials/vk.png" alt=""></a>
+                        <a class="auth-social" href="#"><img src="/images/socials/ok.png" alt=""></a>
+                        <a class="auth-social" href="#"><img src="/images/socials/gg.png" alt=""></a>
+                        <a class="auth-social" href="#"><img src="/images/socials/tw.png" alt=""></a>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="modal-footer d-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <b>Еще не в GM?</b>
+                        </div>
+                        <div class="col-md-6">
+                            <button type="button" class="btn btn-white">Регистрация</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gm-promo">
+            <div class="sub-title">
+                <h1 class="title-1">Подключитесь к GM и <br>получите новых клиентов<br>уже сейчас!</h1>
+                <div class="gm-promo-text">
+                    Создайте всего 1 аккаунт чтобы получить доступ <br>ко всем нашим сервисам. Просто попробуйте<br>
+                    <span class="underline">
+							– это бесплатно!
+						</span>
+                </div>
+            </div>
+            <button class="btn btn-promo">
+                Подключиться
+            </button>
+            <div class="gm-sub-btn">
+                Увеличьте ваши продажи <br>уже через 2 недели
+            </div>
+            <div class="gm-card card-green text-center">
+                <div class="gm-card-title">
+                    <img class="gm-card-icon" src="/images/gm-card-icon.png" alt=""> GM CASH
+                </div>
+                <div class="gm-card-content">
+                    Сервис скидок и кэшбэка,<br>воспользуетесь ими или <br>предложите скидки на свои услуги!<br>Это бесплатно!
+                </div>
+                <a class="gm-card-link" onclick="glob.st('gmcash-slider')" href="javascript:;">
+                    Подробнее
+                </a>
+            </div>
+        </div>
+        <div class="gm-lying-cards">
+            <div class="gm-lying-card card-shadow-1"></div>
+            <div class="gm-lying-card card-shadow-2"></div>
+            <div class="gm-lying-card card-shadow-3"></div>
+            <div onclick="glob.st('gmface-slider')" class="gm-lying-card card-1"></div>
+            <div onclick="glob.st('gmwork-slider')" class="gm-lying-card card-2"></div>
+            <div onclick="glob.st('gmcash-slider')" class="gm-lying-card card-3"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="gm-cards">
+            <div class="gm-card card-blue text-center">
+                <div class="gm-card-title">
+                    <img class="gm-card-icon" src="/images/gm-card-icon.png" alt=""> GM FACE
+                </div>
+                <div class="gm-card-content">
+                    Сервис заданий и фриланса, поможет найти хорошего специалиста или вы сами можете стать специалистом и заработать на этом! Мы не берем комиссии со сделок!
+                </div>
+                <a class="gm-card-link" onclick="glob.st('gmface-slider')" href="javascript:;">
+                    Подробнее
+                </a>
+            </div>
+            <div class="gm-card card-white text-center">
+                <div class="gm-card-title">
+                    <img class="gm-card-icon" src="/images/gm-card-icon.png" alt=""> GM WORK
+                </div>
+                <div class="gm-card-content">
+                    Сервис заданий и фриланса, поможет найти хорошего специалиста или вы сами можете стать специалистом и заработать на этом! Мы не берем комиссии со сделок!
+                </div>
+                <a class="gm-card-link" onclick="glob.st('gmwork-slider')" href="javascript:;">
+                    Подробнее
+                </a>
+            </div>
+            <div class="gm-card card-key"></div>
+        </div>
+    </div>
+    <div class="container">
+        <h3 class="title-2">Добро пожаловать <br>в сообщество профессионалов</h3>
+        <div class="gm-field">
+            <input placeholder="Найти работу, людей и многое другое..." class="gm-field-input" type="text">
+        </div>
+        <div class="sub-title-2">Тысячи специалистов, задач,<br>вакансий, статей, скидок и просто<br>общения</div>
+    </div>
+</section>
+<section class="gm-section-2">
+    <div class="container">
+        <div class="gm-section-content">
+            <div class="section-content" id="gmface-slider">
+                <div class="sub-title-icon">
+                    <img class="gm-card-icon" src="/images/gm-card-icon.png" alt=""> <span>GMFACE</span>
+                </div>
+                <h3 class="title-3 underline-2">Создайте<br>профессиональный<br>профиль на gmface<br>всего за несколько<br>минут.</h3>
+                <ul class="gm-list">
+                    <li class="list-item list-icon-1">
+                        Укажите навыки которыми владеете, добавьте фотографии. Заполните свое портфолио, оказываемые услуги, укажите цены на них.
+                    </li>
+                    <li class="list-item list-icon-2">
+                        Попросите коллег помочь увеличить вам рейтинг, оставить отзывы о вас и вашей деятельности и рекомендации.
+                    </li>
+                    <li class="list-item list-icon-3">
+                        Находите коллег по профессии через удобный поиск, полезные контакты, вакансии, развивайтесь!
+                    </li>
+                    <li class="list-item list-icon-4">
+                        Просматривайте интересные статьи, профили других пользователей, компаний и сообществ
+                    </li>
+                </ul>
+                <button class="btn btn-promo">
+                    Подключиться
+                </button>
+            </div>
+            <div class="section-slider">
+                <div class="owl-carousel slider-1">
+                    <div><img src="/images/slider-1/1.png"></div>
+                    <div><img src="/images/slider-1/2.png"></div>
+                    <div><img src="/images/slider-1/3.png"></div>
+                    <div><img src="/images/slider-1/4.png"></div>
+                    <div><img src="/images/slider-1/5.png"></div>
+                    <div><img src="/images/slider-1/6.png"></div>
+                    <div><img src="/images/slider-1/7.png"></div>
+                    <div><img src="/images/slider-1/8.png"></div>
+                    <div><img src="/images/slider-1/9.png"></div>
+                    <div><img src="/images/slider-1/10.png"></div>
+                    <div><img src="/images/slider-1/11.png"></div>
+                    <div><img src="/images/slider-1/12.png"></div>
+                    <div><img src="/images/slider-1/13.png"></div>
+                </div>
+                <div id="slider-1-nav"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="gm-section-3">
+    <div class="container">
+        <div class="gm-section-content">
+            <div class="section-content v-mobile">
+                <div class="sub-title-icon">
+                    <img class="gm-card-icon" src="/images/gm-card-icon.png" alt=""> <span>GM CASH</span>
+                </div>
+                <h3 class="title-3 underline-3">Разместите скидки свои услуги на GM CASH, что позволит вам привлечь новых клиентов.</h3>
+                <ul class="gm-list">
+                    <li class="list-item list-icon-1">
+                        Разместите скидки свои услуги на GM CASH, что позволит вам привлечь новых клиентов.
+                    </li>
+                    <li class="list-item list-icon-2">
+                        Удобный онлайн конструктор позволит вам сделать это всего за несколько минут.
+                    </li>
+                    <li class="list-item list-icon-3">
+                        Мы не требуем от вас огромных скидок, не берем комиссий, скидки свыше 50% запускаются бесплатно в неограниченном количестве.
+                    </li>
+                    <li class="list-item list-icon-4">
+                        Чтобы вы могли оценить данный сервис, есть возможность разместиться бесплатно
+                    </li>
+                </ul>
+                <button class="btn btn-promo">
+                    Подключиться
+                </button>
+            </div>
+            <div class="section-slider" id="gmcash-slider">
+                <div class="owl-carousel slider-2">
+                    <div><img src="/images/slider-2/1.png"></div>
+                    <div><img src="/images/slider-2/2.png"></div>
+                    <div><img src="/images/slider-2/3.png"></div>
+                    <div><img src="/images/slider-2/4.png"></div>
+                    <div><img src="/images/slider-2/5.png"></div>
+                    <div><img src="/images/slider-2/6.png"></div>
+                    <div><img src="/images/slider-2/7.png"></div>
+                    <div><img src="/images/slider-2/8.png"></div>
+                </div>
+                <div id="slider-2-nav"></div>
+            </div>
+            <div class="section-content v-desktop">
+                <div class="sub-title-icon">
+                    <img class="gm-card-icon" src="/images/gm-card-icon.png" alt=""> <span>GM CASH</span>
+                </div>
+                <h3 class="title-3 underline-3">Разместите скидки свои услуги на GM CASH, что позволит вам привлечь новых клиентов.</h3>
+                <ul class="gm-list">
+                    <li class="list-item list-icon-1">
+                        Разместите скидки свои услуги на GM CASH, что позволит вам привлечь новых клиентов.
+                    </li>
+                    <li class="list-item list-icon-2">
+                        Удобный онлайн конструктор позволит вам сделать это всего за несколько минут.
+                    </li>
+                    <li class="list-item list-icon-3">
+                        Мы не требуем от вас огромных скидок, не берем комиссий, скидки свыше 50% запускаются бесплатно в неограниченном количестве.
+                    </li>
+                    <li class="list-item list-icon-4">
+                        Чтобы вы могли оценить данный сервис, есть возможность разместиться бесплатно
+                    </li>
+                </ul>
+                <button class="btn btn-promo">
+                    Подключиться
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="gm-section-4">
+    <div class="container">
+        <div class="gm-section-content">
+            <div class="section-content" id="gmwork-slider">
+                <div class="sub-title-icon">
+                    <img class="gm-card-icon" src="/images/gm-card-icon.png" alt=""> <span>GM WORK</span>
+                </div>
+                <h3 class="title-3 underline-4">Откликайтесь на<br>задания на gm<br>work, что позволит<br>вам зарабатывать.</h3>
+                <ul class="gm-list">
+                    <li class="list-item list-icon-1">
+                        Мы не берем комиссий со сделок, а так же не берем плату за отклики на задания - все бесплатно.
+                    </li>
+                    <li class="list-item list-icon-2">
+                        Ваш профиль на gmface - ваша визитная карточка и часто от него зависит, стоит ли с вами работать.
+                    </li>
+                    <li class="list-item list-icon-3">
+                        Помимо выполнения заданий, вы так же можете и размещать их, если возникнет необходимость.
+                    </li>
+                    <li class="list-item list-icon-4">
+                        Иногда пользователи могут напрямую предложить вам заказ на gmface, найдя вас через поиск
+                    </li>
+                </ul>
+                <button class="btn btn-promo">
+                    Подключиться
+                </button>
+            </div>
+            <div class="section-slider">
+                <div class="owl-carousel slider-3">
+                    <div><img src="/images/slider-3/1.png"></div>
+                    <div><img src="/images/slider-3/2.png"></div>
+                    <div><img src="/images/slider-3/3.png"></div>
+                    <div><img src="/images/slider-3/4.png"></div>
+                    <div><img src="/images/slider-3/5.png"></div>
+                    <div><img src="/images/slider-3/6.png"></div>
+                    <div><img src="/images/slider-3/7.png"></div>
+                </div>
+                <div id="slider-3-nav"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="gm-section-5">
+    <div class="container">
+        <div class="gm-section-content">
+            <div class="section-girl"></div>
+            <div class="section-content">
+                <h3 class="title-4">
+                    Найдите подходящую <br>вакансию или стажировку
+                </h3>
+                <span class="sub-title">
+						Предлогаемые запросы поиска
+					</span>
+                <ul class="hashtags">
+                    <li class="hashtag-item">Продажи</li>
+                    <li class="hashtag-item">Инженерное дело</li>
+                    <li class="hashtag-item">Развитие бизнеса</li>
+                    <li class="hashtag-item">Финансы</li>
+                    <li class="hashtag-item">Услуги в области здравоохранения</li>
+                    <li class="hashtag-item">Маркетинг</li>
+                    <li class="hashtag-item">Информационные технологи</li>
+                    <li class="hashtag-item">Административная деятельность</li>
+                    <li class="hashtag-item">Кадровое сопровождение</li>
+                    <span class="hashtags-slider">
+							<li class="hashtag-item">Операционная деятельность</li>
+							<li class="hashtag-item">Управление проектами</li>
+							<li class="hashtag-item">Бухгалтерский учет</li>
+							<li class="hashtag-item">Искусство и дизайн</li>
+							<li class="hashtag-item">Общественные и социальные услуги</li>
+							<li class="hashtag-item">Консультирование</li>
+							<li class="hashtag-item">Образование</li>
+							<li class="hashtag-item">Предпринимательство</li>
+							<li class="hashtag-item">Юриспруденция</li>
+							<li class="hashtag-item">СМИ и информационное взаимодействие</li>
+							<li class="hashtag-item">Военная и гражданская оборона</li>
+							<li class="hashtag-item">Управление продуктами</li>
+							<li class="hashtag-item">Закупки и снабжение</li>
+							<li class="hashtag-item">Обеспечение качества</li>
+							<li class="hashtag-item">Недвижимость</li>
+							<li class="hashtag-item">Научно-исследовательская деятельность</li>
+							<li class="hashtag-item">Поддержка</li>
+						</span>
+                </ul>
+                <div class="clear clearfix mb-3"></div>
+                <a onclick="glob.sl()" class="btn-collapse" href="javascript:;"><i class="fa fa-chevron-up"></i> <span>свернуть</span></a>
+                <div class="gm-or"> </div>
+                <h3 class="title-5">
+                    Разместите свою вакансию <br>для просмотра другими людьм
+                </h3>
+                <button class="btn btn-blue">
+                    Разместить вакансию
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="gm-section-6">
+    <div class="container">
+        <div class="gm-block">
+            <div class="row">
+                <div class="col-md text-center">
+                    <img style="margin-bottom: 21px;" src="/images/card-icon-1.png" alt="">
+                    <div class="sub-title-3">
+                        Установите контакт с людьми, которые могут помочь
+                    </div>
+                    <button class="btn btn-blockpromo">
+                        Найти знакомых
+                    </button>
+                </div>
+                <div class="col-md text-center">
+                    <img src="/images/card-icon-2.png" alt="">
+                    <div class="sub-title-3">
+                        Освойте навыки, которые необходимы для достижения успех
+                    </div>
+                    <div class="btn-select">
+                        <button onclick="glob.ta('selectBtn')" class="btn btn-blockpromo">
+                            <div>Выбрать тему для изучения</div>
+                            <i class="fa fa-chevron-down"></i>
+                        </button>
+                        <div class="select-card d-none" id="selectBtn">
+                            <div class="card-content">
+                                <div class="card-scroll">
+                                    <ul class="card-list">
+                                        <li class="card-list-item">
+                                            <div class="card-name">Продажи</div>
+                                            <div class="card-list-action">260+ курсов</div>
+                                        </li>
+                                        <li class="card-list-item">
+                                            <div class="card-name">Инженерное дело</div>
+                                            <div class="card-list-action">90+ курсов</div>
+                                        </li>
+                                        <li class="card-list-item">
+                                            <div class="card-name">Развитие бизнеса</div>
+                                            <div class="card-list-action">1200+ курсов</div>
+                                        </li>
+                                        <li class="card-list-item">
+                                            <div class="card-name">ИТ</div>
+                                            <div class="card-list-action">10+ курсов</div>
+                                        </li>
+                                        <li class="card-list-item">
+                                            <div class="card-name">Административная деяте</div>
+                                            <div class="card-list-action">5+ курсов</div>
+                                        </li>
+                                        <li class="card-list-item">
+                                            <div class="card-name">Кадровое сопровождение</div>
+                                            <div class="card-list-action">136+ курсов</div>
+                                        </li>
+                                        <li class="card-list-item">
+                                            <div class="card-name">Операционная деятельность</div>
+                                            <div class="card-list-action">18+ курсов</div>
+                                        </li>
+                                        <li class="card-list-item">
+                                            <div class="card-name">Управление проектами</div>
+                                            <div class="card-list-action">25+ курсов</div>
+                                        </li>
+                                        <li class="card-list-item">
+                                            <div class="card-name">Бухгалтерский учет</div>
+                                            <div class="card-list-action">10+ курсов</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="gm-section-7">
+    <div class="container">
+        <h3 class="title-6">
+            Кому будет полезно<br>использовать GM Face?
+        </h3>
+        <div class="sub-title-4 mb-5">
+            Любому специалисту, <br>желающему развиваться <br>профессионально
+        </div>
+    </div>
+</section>
+<section class="gm-section-8">
+    <div class="container">
+        <div class="gm-btns">
+            <div>
+                <button class="btn btn-blue btn-simle mb-4">
+                    Найти сотрудника или однокурсника
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-blue btn-simle mb-4">
+                    Найдите курс или тренинг
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-blue btn-simle mb-4">
+                    Найти новую работу
+                </button>
+            </div>
+        </div>
+        <h3 class="title-7">
+            Присоединяйтесь к своим <br>коллегам, однокурсникам и <br>друзьям в <img src="/images/gm-head-icon.png" class="gm-head-icon" alt=""> GM Face
+        </h3>
+        <div class="text-center pt-5">
+            <button class="btn btn-promo">
+                Подключиться
+            </button>
+        </div>
+    </div>
+</section>
+<section class="gm-footer">
+    <div class="container">
+        <img src="/images/gm-head-icon.png" class="gm-footer-icon" alt="">
+        <div class="row">
+            <div class="col-lg-3">
+                <h4 class="title-8">Общие сведения</h4>
+                <ul class="footer-list">
+                    <li class="footer-list-item"><a href="#">Зарегистрироваться</a></li>
+                    <li class="footer-list-item"><a href="#">Справка</a></li>
+                    <li class="footer-list-item"><a href="#">О компании</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h4 class="title-8">Просмотр информации</h4>
+                <ul class="footer-list">
+                    <li class="footer-list-item"><a href="#">Вакансии</a></li>
+                    <li class="footer-list-item"><a href="#">Заработная плата</a></li>
+                    <li class="footer-list-item"><a href="#">Реферальная программа</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h4 class="title-8">Решения для бизнеса</h4>
+                <ul class="footer-list">
+                    <li class="footer-list-item"><a href="#">Решения для найма</a></li>
+                    <li class="footer-list-item"><a href="#">Маркетинг</a></li>
+                    <li class="footer-list-item"><a href="#">Продажи</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h4 class="title-8">Каталоги</h4>
+                <ul class="footer-list">
+                    <li class="footer-list-item"><a href="#">Участники</a></li>
+                    <li class="footer-list-item"><a href="#">Вакансии</a></li>
+                    <li class="footer-list-item"><a href="#">Компании</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="links">
+            <a href="#">О компании</a>
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Контакты</a>
+        </div>
+    </div>
+</section>
+<script src="/js/jquery-1.11.0.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
